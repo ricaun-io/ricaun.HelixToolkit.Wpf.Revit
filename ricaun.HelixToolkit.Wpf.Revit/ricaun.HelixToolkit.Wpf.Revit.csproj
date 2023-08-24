@@ -181,7 +181,7 @@
 
   <ItemGroup>
     <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="$(RevitVersion).*" IncludeAssets="build; compile" PrivateAssets="All" />
-    <PackageReference Include="ricaun.HelixToolkit.Wpf" Version="2.20.2" />
+    <PackageReference Include="ricaun.HelixToolkit.Wpf" Version="*" />
   </ItemGroup>
   
   <ItemGroup>
