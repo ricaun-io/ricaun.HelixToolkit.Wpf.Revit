@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Features
 - First Release
 - `PreviewWindow` with simple `Revit` geometry viewer.
+- Add `Options` in `PreviewWindow` to control `get_Geometry`.
+- Add `Assets` with base image.
 - Update `ricaun.HelixToolkit.Wpf` - `2.20.2`
 
 [vNext]: ../../compare/1.0.0...HEAD

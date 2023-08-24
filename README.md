@@ -6,6 +6,10 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/actions)
 
+`PreviewWindow` for Revit `GeometryObjects` using `HelixToolkit` and `WPF`.
+
+<a href="https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/blob/master/ricaun.HelixToolkit.Wpf.Revit/Revit/Commands/Command.cs"><image src="Assets/PreviewWindow.png" alt="PreviewWindow"></image></a>
+
 ## Install
 
 Install the package from [ricaun.HelixToolkit.Wpf.Revit](https://www.nuget.org/packages/ricaun.HelixToolkit.Wpf.Revit/).
@@ -40,7 +44,7 @@ previewWindow.ZoomExtents();
 
 ### Revit
 
-The `Element` could be used and the Material or GraphicsStyle will be used to render the geometry.
+The `Element` could be used and the `Material` or `GraphicsStyle` will be used to render the geometry.
 
 ```C#
 new PreviewWindow()
@@ -48,7 +52,7 @@ new PreviewWindow()
     .ShowDialog();
 ```
 
-The `Document` is used to get the Material or GraphicsStyle color for `GeometryObject`.
+The `Document` is used to get the `Material` or `GraphicsStyle` color for `GeometryObject`.
 
 ```C#
 new PreviewWindow()
@@ -59,6 +63,7 @@ new PreviewWindow()
 
 The `PreviewWindowRevitUtils` has some utils methods to use with `PreviewWindow`.
 ```C#
+previewWindow.SetOptions(options)
 previewWindow.SetDocument(document);
 previewWindow.Add(element);
 previewWindow.Add(elements);

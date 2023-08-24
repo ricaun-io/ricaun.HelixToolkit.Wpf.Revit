@@ -28,7 +28,12 @@ namespace ricaun.HelixToolkit.Wpf.Revit.Revit.Commands
                 previewWindow.Closed += (s, e) => previewWindow = null;
             }
 
-            previewWindow.Clear().Add(elements).Camera(view).ZoomExtents();
+            var options = new Options()
+            {
+                View = view,
+            };
+
+            previewWindow.Clear().SetOptions(options).Add(elements).Camera(view).ZoomExtents();
             previewWindow?.Show();
             previewWindow?.Activate();
 
@@ -68,24 +73,4 @@ namespace ricaun.HelixToolkit.Wpf.Revit.Revit.Commands
             return instances;
         }
     }
-
-
-    [Transaction(TransactionMode.Manual)]
-    public class CommandExample : IExternalCommand
-    {
-        public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elementSet)
-        {
-            UIApplication uiapp = commandData.Application;
-
-            new PreviewWindow()
-                .Add(Line.CreateBound(XYZ.Zero, XYZ.BasisX))
-                .Add(Line.CreateBound(XYZ.Zero, XYZ.BasisY))
-                .Add(Line.CreateBound(XYZ.Zero, XYZ.BasisZ))
-                .ShowDialog();
-
-            return Result.Succeeded;
-        }
-    }
-
-
 }

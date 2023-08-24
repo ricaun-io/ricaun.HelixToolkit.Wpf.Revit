@@ -12,6 +12,7 @@ namespace ricaun.HelixToolkit.Wpf.Revit
     /// </summary>
     public static class PreviewWindowRevitUtils
     {
+        static Options Options;
         /// <summary>
         /// GetVisual3D
         /// </summary>
@@ -20,11 +21,23 @@ namespace ricaun.HelixToolkit.Wpf.Revit
         public static Visual3D GetVisual3D(Element element)
         {
             DocumentUtils.Document = element.Document;
-            Options options = new Options()
+            Options options = Options ?? new Options()
             {
                 DetailLevel = ViewDetailLevel.Fine
             };
             return element.get_Geometry(options).ToVisual3D();
+        }
+
+        /// <summary>
+        /// SetOptions to use when Element <see cref="Autodesk.Revit.DB.Element.get_Geometry(Autodesk.Revit.DB.Options)"/>
+        /// </summary>
+        /// <param name="previewWindow"></param>
+        /// <param name="options"></param>
+        /// <returns></returns>
+        public static PreviewWindow SetOptions(this PreviewWindow previewWindow, Options options)
+        {
+            Options = options;
+            return previewWindow;
         }
 
         /// <summary>
