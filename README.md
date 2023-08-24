@@ -5,6 +5,7 @@
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/actions)
+[![Release](https://img.shields.io/nuget/v/ricaun.HelixToolkit.Wpf.Revit?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.HelixToolkit.Wpf.Revit)
 
 `PreviewWindow` for Revit `GeometryObjects` using `HelixToolkit` and `WPF`.
 
