@@ -11,6 +11,8 @@
 
 <a href="https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/blob/master/ricaun.HelixToolkit.Wpf.Revit/Revit/Commands/Command.cs"><image src="Assets/PreviewWindow.png" alt="PreviewWindow"></image></a>
 
+*The performance of the `PreviewWindow` can vary in how many elements are in the Helix viewer.*
+
 ## Install
 
 Install the package from [ricaun.HelixToolkit.Wpf.Revit](https://www.nuget.org/packages/ricaun.HelixToolkit.Wpf.Revit/).
