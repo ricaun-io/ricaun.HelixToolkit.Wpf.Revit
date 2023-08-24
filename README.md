@@ -1,10 +1,10 @@
 # ricaun.HelixToolkit.Wpf.Revit
 
-[![Revit 2017](https://img.shields.io/badge/Revit-2017+-blue.svg)](../..)
-[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
+[![Revit 2017](https://img.shields.io/badge/Revit-2017+-blue.svg)](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
+[![Build](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/actions)
 
 ## Install
 
@@ -13,7 +13,7 @@ Install the package from [ricaun.HelixToolkit.Wpf.Revit](https://www.nuget.org/p
 <PackageReference Include="ricaun.HelixToolkit.Wpf.Revit" Version="*" />
 ```
 
-This package depends on [ricaun.HelixToolkit.Wpf](https://www.nuget.org/packages/ricaun.HelixToolkit.Wpf/).
+This package depends on [ricaun.HelixToolkit.Wpf](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf).
 ```xml
 <PackageReference Include="ricaun.HelixToolkit.Wpf" Version="*" />
 ```
@@ -70,7 +70,7 @@ previewWindow.Camera(lookDirection, upDirection);
 
 ## Release
 
-* [Latest release](../../releases/latest)
+* [Latest release](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/releases/latest)
 
 ## License
 
@@ -78,4 +78,4 @@ This project is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia
 
 ---
 
-Do you like this project? Please [star this project on GitHub](../../stargazers)!
+Do you like this project? Please [star this project on GitHub](https://github.com/ricaun-io/ricaun.HelixToolkit.Wpf.Revit/stargazers)!
